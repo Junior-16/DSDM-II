@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ifc.chooser.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/leiaut"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nota1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:hint="1º nota"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/nota2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nota1"
+            android:layout_marginLeft="18dp"
+            android:ems="10"
+            android:hint="2º nota"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/nota3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_below="@+id/nota2"
+            android:ems="10"
+            android:hint="3º nota"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="175dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/relativeLayout2"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/peso1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="1º Peso"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:id="@+id/peso2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/peso1"
+            android:ems="10"
+            android:hint="2º peso"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/peso3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/peso2"
+            android:ems="10"
+            android:hint="3º peso"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="285dp"
+        android:text="Fazer Média" />
+
+</RelativeLayout>
+
